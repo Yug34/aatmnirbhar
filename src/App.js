@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import ProfSite from './Components/ProfessorSite';
+import GoodSite from './Components/ActuallyGoodSite';
+
+// Switches between two states of the website
+// Professional and good looking one, vs one how professors make it.
 
 function App() {
+  const [switchSite, setSwitchSite] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {switchSite ? <GoodSite switchSite={setSwitchSite} /> : <ProfSite switchSite={setSwitchSite} />}
     </div>
   );
 }
