@@ -17,3 +17,7 @@
 .centered-text {
     text-align: center;
 }
+
+.monospace-font {
+    font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
+}

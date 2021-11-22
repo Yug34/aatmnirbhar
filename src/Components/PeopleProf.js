@@ -32,7 +32,8 @@ function PeopleProf() {
             </ul>
           </p>
           <p>
-            Want to join us and help other students? Mail me your CV at <a href="mailto:yug.gjr@gmail.com">yug.gjr@gmail.com</a>
+            Want to join us and help other students? Mail me your CV at <a href="mailto:yug.gjr@gmail.com">yug.gjr@gmail.com</a>,
+            with a couple of times in week where you'd be available to have a chat on Zoom.
           </p>
         </div>
         <hr />
