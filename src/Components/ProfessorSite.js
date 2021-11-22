@@ -1,20 +1,29 @@
 import { Link } from "react-router-dom";
 import anyBrowser from "../Images/anybrowser.gif";
+import React from "react";
 
 function ProfSite(props) {
   return (
     <div className="professor-site">
-      <h2 className="centered-text">Aatmnirbhar</h2>
-        <div className="greyBox" id="disclaimer">
-          This isn't the actual Aatmnirbhar website, this is something I made for fun.
-          I have recently been looking for MSc supervisors and have thus looked at a <b>LOT</b> of websites made by professors.
-          I made this to imitate a website that a professor would make for their research group... ish. It is an art that I can't replicate!
-          To view the actual website, <button onClick={() => props.switchSite(true)}>Click Me</button>!
-        </div>
-        <hr />
-        <Link to="/joinUsProf">Join Us!</Link>
-        <Link to="/peopleProf">People</Link>
-        <div>
+      <h1 className="centered-text">Aatmnirbhar</h1>
+      <div className="greyBox" id="disclaimer">
+        This isn't the actual Aatmnirbhar website, this is something I made for
+        fun. I have recently been looking for MSc supervisors and have thus
+        looked at a <b>LOT</b> of websites made by professors. I made this to
+        imitate a website that a professor would make for their research
+        group... ish. It is an art that I can't replicate! To view the actual
+        website,{" "}
+        <button onClick={() => props.switchSite(true)}>Click Me</button>!
+      </div>
+      <hr />
+      <Link to="/joinUsProf">Join Us!</Link>
+      <Link to="/peopleProf">People</Link>
+      <h2>Resources</h2>
+      <div>
+        <h3>Shell scripting</h3>
+        <p>Tutorial went well, don't you think? Tons of questions!</p>
+      </div>
+      <div>
         <p>
           <i>Yug Gajjar</i>
         </p>
@@ -24,7 +33,9 @@ function ProfSite(props) {
         <p>000-111-2222 (home)</p>
         <p>333-444-5555 (FAX)</p>
         <p>
-          <small>But please use email, as I'm not even sure the phone still works.</small>
+          <small>
+            But please use email, as I'm not even sure the phone still works.
+          </small>
         </p>
         <img src={anyBrowser} alt="anyBrowser" id="anyBrowser" />
         <hr />
@@ -32,31 +43,65 @@ function ProfSite(props) {
           <p>This site was inspired by:</p>
           <ul>
             <li>
-              "Any Browser" gif from <b>Prof. Dr. Daniel Berry: <a href="https://cs.uwaterloo.ca/~dberry/">https://cs.uwaterloo.ca/~dberry/</a></b>
+              "Any Browser" gif from{" "}
+              <b>
+                Prof. Dr. Daniel Berry:{" "}
+                <a href="https://cs.uwaterloo.ca/~dberry/">
+                  https://cs.uwaterloo.ca/~dberry/
+                </a>
+              </b>
             </li>
             <li>
-              All the grEys, <a href="https://imgur.com/a/U8B1Zfq">and NOT grAys(!)</a> taken from - <b>Prof. Dr. John Aycock: <a href="https://pages.cpsc.ucalgary.ca/~aycock/">https://pages.cpsc.ucalgary.ca/~aycock/</a> and <a href="https://sites.google.com/site/aycockprize/">Aycock Prize</a></b>
+              All the grEys,{" "}
+              <a href="https://imgur.com/a/U8B1Zfq">and NOT grAys(!)</a> taken
+              from -{" "}
+              <b>
+                Prof. Dr. John Aycock:{" "}
+                <a href="https://pages.cpsc.ucalgary.ca/~aycock/">
+                  https://pages.cpsc.ucalgary.ca/~aycock/
+                </a>{" "}
+                and{" "}
+                <a href="https://sites.google.com/site/aycockprize/">
+                  Aycock Prize
+                </a>
+              </b>
             </li>
             <li>
-              The (home) {"&"} (FAX) part, the tasteful background color - <b>Prof. Dr. Jeffrey Ullman: <a href="http://infolab.stanford.edu/~ullman/">http://infolab.stanford.edu/~ullman/</a></b>
+              The (home) {"&"} (FAX) part, the tasteful background color -{" "}
+              <b>
+                Prof. Dr. Jeffrey Ullman:{" "}
+                <a href="http://infolab.stanford.edu/~ullman/">
+                  http://infolab.stanford.edu/~ullman/
+                </a>
+              </b>
             </li>
           </ul>
           <p>
             Honorable(?) mentions:
             <ul>
               <li>
-                I was going to do something similar to this where you would HAVE TO highlight everything on the webpage to make sense of stuff, but I remembered mobile users exist: <b>Prof. Dr. Julien Arino: <a href="https://server.math.umanitoba.ca/~jarino/courses/math2720/">https://server.math.umanitoba.ca/~jarino/courses/math2720/</a></b>
+                I was going to do something similar to this where you would HAVE
+                TO highlight everything on the webpage to make sense of stuff,
+                but I remembered mobile users exist:{" "}
+                <b>
+                  Prof. Dr. Julien Arino:{" "}
+                  <a href="https://server.math.umanitoba.ca/~jarino/courses/math2720/">
+                    https://server.math.umanitoba.ca/~jarino/courses/math2720/
+                  </a>
+                </b>
               </li>
             </ul>
           </p>
         </div>
         <hr />
         <div className="greyBox">
-          The background color of this website is a bit of a mystery to me. I don't know why it's so dark, but I do know that it's a dark blue. {"<--"} This was generated by GitHub CoPilot.
-        </div>
+          The background color of this website is a bit of a mystery to me. I
+          don't know why it's so dark, but I do know that it's a dark blue.{" "}
+          {"<--"} This was generated by GitHub CoPilot.
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default ProfSite;
