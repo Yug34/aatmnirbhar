@@ -1,4 +1,4 @@
-function JoinUsProf(props) {
+function JoinUsProf() {
     return (
       <div className="join-us">
           Join us!
