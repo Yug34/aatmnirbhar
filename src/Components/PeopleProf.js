@@ -2,7 +2,7 @@ function PeopleProf() {
     return (
       <div className="professor-site">
         <a href="/">
-          <h2 className="centered-text">Aatmnirbhar Club</h2>
+          <h2 className="centered-text">Aatmnirbhar</h2>
         </a>
         <hr />
         <h3 className="centered-text">People</h3>
@@ -30,6 +30,9 @@ function PeopleProf() {
               <a href="https://www.linkedin.com/in/dhruv-bhavsar-293960189/">Dhruv Bhavsar</a>: Machine Learning and everything related.
               </li>
             </ul>
+          </p>
+          <p>
+            Want to join us and help other students? Mail me your CV at <a href="mailto:yug.gjr@gmail.com">yug.gjr@gmail.com</a>
           </p>
         </div>
         <hr />
