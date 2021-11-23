@@ -6,6 +6,7 @@ function ProfSite(props) {
   return (
     <div className="professor-site">
       <h1 className="centered-text">Aatmnirbhar</h1>
+      <hr />
       <div className="greyBox" id="disclaimer">
         This isn't the actual Aatmnirbhar website, this is something I made for
         fun. I have recently been looking for MSc supervisors and have thus
@@ -40,7 +41,7 @@ function ProfSite(props) {
         <img src={anyBrowser} alt="anyBrowser" id="anyBrowser" />
         <hr />
         <div className="greyBox">
-          <p>This site was inspired by:</p>
+          <p>This site was mostly inspired by:</p>
           <ul>
             <li>
               "Any Browser" gif from{" "}
