@@ -8,22 +8,16 @@ function ProfSite(props) {
       <h1 className="centered-text">Aatmnirbhar</h1>
       <hr />
       <div className="greyBox" id="disclaimer">
-        This isn't the actual Aatmnirbhar website, this is something I made for
-        fun. I have recently been looking for MSc supervisors and have thus
-        looked at a <b>LOT</b> of websites made by professors. I made this to
-        imitate a website that a professor would make for their research
-        group... ish. It is an art that I can't replicate! To view the actual
-        website,{" "}
-        <button onClick={() => props.switchSite(true)}>Click Me</button>!
+        <b>A tiny note:</b> I have recently been looking for MSc supervisors and
+        have thus looked at a <b>LOT</b> of websites made by professors. I tried
+        to imitate a website that a professor would make for their research
+        group... ish. It is an art that I can't replicate!
       </div>
       <hr />
-      <Link to="/joinUsProf">Join Us!</Link>
-      <Link to="/peopleProf">People</Link>
+      {/*<Link to="/joinUsProf">Join Us!</Link>*/}
+      {/*<Link to="/peopleProf">People</Link>*/}
       <h2>Resources</h2>
-      <div>
-        <h3>Shell scripting</h3>
-        <p>Tutorial went well, don't you think? Tons of questions!</p>
-      </div>
+      <div id="resourcesList">{resourcesRendered}</div>
       <div>
         <p>
           <i>Yug Gajjar</i>
@@ -42,56 +36,10 @@ function ProfSite(props) {
         <hr />
         <div className="greyBox">
           <p>This site was mostly inspired by:</p>
-          <ul>
-            <li>
-              "Any Browser" gif from{" "}
-              <b>
-                Prof. Dr. Daniel Berry:{" "}
-                <a href="https://cs.uwaterloo.ca/~dberry/">
-                  https://cs.uwaterloo.ca/~dberry/
-                </a>
-              </b>
-            </li>
-            <li>
-              All the grEys,{" "}
-              <a href="https://imgur.com/a/U8B1Zfq">and NOT grAys(!)</a> taken
-              from -{" "}
-              <b>
-                Prof. Dr. John Aycock:{" "}
-                <a href="https://pages.cpsc.ucalgary.ca/~aycock/">
-                  https://pages.cpsc.ucalgary.ca/~aycock/
-                </a>{" "}
-                and{" "}
-                <a href="https://sites.google.com/site/aycockprize/">
-                  Aycock Prize
-                </a>
-              </b>
-            </li>
-            <li>
-              The (home) {"&"} (FAX) part, the tasteful background color -{" "}
-              <b>
-                Prof. Dr. Jeffrey Ullman:{" "}
-                <a href="http://infolab.stanford.edu/~ullman/">
-                  http://infolab.stanford.edu/~ullman/
-                </a>
-              </b>
-            </li>
-          </ul>
+          <ul>{inspirationsRendered}</ul>
           <p>
-            Honorable(?) mentions:
-            <ul>
-              <li>
-                I was going to do something similar to this where you would HAVE
-                TO highlight everything on the webpage to make sense of stuff,
-                but I remembered mobile users exist:{" "}
-                <b>
-                  Prof. Dr. Julien Arino:{" "}
-                  <a href="https://server.math.umanitoba.ca/~jarino/courses/math2720/">
-                    https://server.math.umanitoba.ca/~jarino/courses/math2720/
-                  </a>
-                </b>
-              </li>
-            </ul>
+            Honorable mentions (?):
+            <ul>{honorableRendered}</ul>
           </p>
         </div>
         <hr />
@@ -104,5 +52,80 @@ function ProfSite(props) {
     </div>
   );
 }
+
+const resources = [
+  {
+    title: "Shell scripting",
+    points: [
+      "Tutorial went well, don't you think? Tons of questions!",
+      'Most of what we went through can easily be found in <a href="https://missing.csail.mit.edu/">MIT\'s Missing Semester</a>, a really good course.',
+      'An overview of the Linux directory structure: <a href="https://www.thegeekstuff.com/2010/09/linux-file-system-structure/">Linux Directory Structure</a>',
+    ],
+  },
+];
+
+const resourcesRendered = resources.map((resource) => (
+  <div key={resource.title}>
+    <h3>
+      <b>
+        <i>{resource.title}</i>
+      </b>
+    </h3>
+    <ul>
+      {resource.points.map((point) => (
+        <li dangerouslySetInnerHTML={{ __html: point }} />
+      ))}
+    </ul>
+  </div>
+));
+
+const inspirationSites = [
+  {
+    creditFor: '"Any Browser" gif from -',
+    professorName: "Prof. Dr. Daniel Berry",
+    siteLink: "https://cs.uwaterloo.ca/~dberry/",
+  },
+  {
+    creditFor:
+      'All the grEys, <a href="https://imgur.com/a/U8B1Zfq">and NOT grAys(!)</a> taken from - <a href="https://sites.google.com/site/aycockprize/">Aycock Prize</a> and',
+    professorName: "Prof. Dr. John Aycock",
+    siteLink: "https://pages.cpsc.ucalgary.ca/~aycock/",
+  },
+  {
+    creditFor:
+      "The (home) & (FAX) part, the tasteful background color and horizontal rules from -",
+    professorName: "Prof. Dr. Jeffrey Ullman",
+    siteLink: "http://infolab.stanford.edu/~ullman/",
+  },
+];
+
+const inspirationsRendered = inspirationSites.map((insp) => (
+  <li>
+    <p
+      dangerouslySetInnerHTML={{ __html: insp.creditFor + " " }}
+      style={{ display: "inline" }}
+    />
+    <b>
+      {insp.professorName}: <a href={insp.siteLink}>{insp.siteLink}</a>
+    </b>
+  </li>
+));
+
+const honorableMentions = [
+  {
+    profName: "Prof. Dr. Julien Arino",
+    link: "https://server.math.umanitoba.ca/~jarino/courses/math2720/",
+    description:
+      "I thought of doing something similar to this where you would HAVE TO highlight everything on the webpage to make sense of stuff, but I remembered mobile users exist",
+  },
+];
+
+const honorableRendered = honorableMentions.map((site) => (
+  <li>
+    {site.description + ": "}
+    <b>{site.profName + " - "}</b>
+    <a href={site.link}>{site.link}</a>
+  </li>
+));
 
 export default ProfSite;
