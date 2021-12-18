@@ -55,7 +55,7 @@ const resources = [
   {
     title: "Shell scripting",
     points: [
-      "Tutorial went well, don't you think? Tons of questions!",
+      'Tutorial went well, don\'t you think? Tons of questions!',
       'Most of what we went through can easily be found in <a href="https://missing.csail.mit.edu/">MIT\'s Missing Semester</a>, a really good course.',
       'An overview of the <a href="https://www.thegeekstuff.com/2010/09/linux-file-system-structure/">Linux Directory Structure</a>.',
     ],
