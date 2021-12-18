@@ -10,10 +10,12 @@ function PeopleProf() {
       <hr />
       <h3 className="centered-text">People</h3>
       <div className="greyBox">
-        <p>
-          I made this club to help students who were interested in Software
-          Engineering, I was tired of seeing so many students go for outsourced
-          and contract-based software development jobs in firms like{" "}
+      <p>
+          I made this club to help students who were interested primarily in Software
+          Engineering, by guiding them to the point where they could learn things off
+          the internet <b>independently</b>; hence "Aatm (self) nirbhar (dependent)".
+          I did this because I was tired of seeing so many students go for outsourced
+          and contract-based software development jobs in name-and-shame'd firms like{" "}
           <a href="https://www.reddit.com/r/cscareerquestions/comments/eu88if/name_and_shame_tata_consultancy_services/">
             TCS
           </a>
