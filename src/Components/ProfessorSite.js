@@ -1,4 +1,4 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import anyBrowser from "../Images/anybrowser.gif";
 import React from "react";
 
@@ -14,8 +14,8 @@ function ProfSite(props) {
         group... ish. It is an art that I can't replicate!
       </div>
       <hr />
-      {/*<Link to="/joinUsProf">Join Us!</Link>*/}
-      {/*<Link to="/peopleProf">People</Link>*/}
+      <Link to="/joinUsProf">Join Us!</Link>
+      <Link to="/peopleProf">People</Link>
       <h2>Resources</h2>
       <div id="resourcesList">{resourcesRendered}</div>
       <div>
@@ -37,10 +37,8 @@ function ProfSite(props) {
         <div className="greyBox">
           <p>This site was mostly inspired by:</p>
           <ul>{inspirationsRendered}</ul>
-          <p>
-            Honorable mentions (?):
-            <ul>{honorableRendered}</ul>
-          </p>
+          <p>Honorable mentions (?):</p>
+          <ul>{honorableRendered}</ul>
         </div>
         <hr />
         <div className="greyBox">
