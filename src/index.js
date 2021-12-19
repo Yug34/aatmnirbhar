@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import JoinUsProf from './Components/JoinUsProf';
-import PeopleProf from './Components/PeopleProf';
+import JoinUsProf from './Components/Pages/JoinUsProf';
+import PeopleProf from './Components/Pages/PeopleProf';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''}>
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="joinUsProf" element={<JoinUsProf />} />

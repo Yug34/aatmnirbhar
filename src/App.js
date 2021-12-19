@@ -1,6 +1,6 @@
 import './App.css';
 import './Stylesheets/Prof.css';
-import ProfSite from './Components/ProfessorSite';
+import ProfSite from './Components/Pages/ProfessorSite';
 
 function App() {
   return (
