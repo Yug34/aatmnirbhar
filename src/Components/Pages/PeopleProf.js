@@ -10,24 +10,6 @@ function PeopleProf() {
       <hr />
       <h3 className="centered-text">People</h3>
       <div className="greyBox">
-      <p>
-          I made this club to help students who were interested primarily in Software
-          Engineering, by guiding them to the point where they could learn things off
-          the internet <b>independently</b>; hence "Aatm (self) nirbhar (dependent)".
-          I did this because I was tired of seeing so many students go for outsourced
-          and contract-based software development jobs in name-and-shame'd firms like{" "}
-          <a href="https://www.reddit.com/r/cscareerquestions/comments/eu88if/name_and_shame_tata_consultancy_services/">
-            TCS
-          </a>
-          . I tasked myself with the goal of getting a couple of capable
-          students out of "
-          <a href="https://www.reddit.com/r/learnprogramming/comments/qrlx5m/what_exactly_is_tutorial_hell/">
-            tutorial hell
-          </a>
-          " and teach them enough so that they could branch out of just
-          following tutorials and start their own projects, ones they'd actually
-          want to create.
-        </p>
         <p>
           I was the only one teaching, so I could only take on a couple of
           students. And I really only knew Software Engineering/WebDev, not this
