@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/aatmnirbhar/static/css/main.ac017d37.chunk.css",
-    "main.js": "/aatmnirbhar/static/js/main.c70969cd.chunk.js",
-    "main.js.map": "/aatmnirbhar/static/js/main.c70969cd.chunk.js.map",
+    "main.css": "/aatmnirbhar/static/css/main.4da0eec7.chunk.css",
+    "main.js": "/aatmnirbhar/static/js/main.86cb077d.chunk.js",
+    "main.js.map": "/aatmnirbhar/static/js/main.86cb077d.chunk.js.map",
     "runtime-main.js": "/aatmnirbhar/static/js/runtime-main.1279e63e.js",
     "runtime-main.js.map": "/aatmnirbhar/static/js/runtime-main.1279e63e.js.map",
-    "static/js/2.9da2f52e.chunk.js": "/aatmnirbhar/static/js/2.9da2f52e.chunk.js",
-    "static/js/2.9da2f52e.chunk.js.map": "/aatmnirbhar/static/js/2.9da2f52e.chunk.js.map",
+    "static/js/2.63fbb511.chunk.js": "/aatmnirbhar/static/js/2.63fbb511.chunk.js",
+    "static/js/2.63fbb511.chunk.js.map": "/aatmnirbhar/static/js/2.63fbb511.chunk.js.map",
     "index.html": "/aatmnirbhar/index.html",
-    "static/css/main.ac017d37.chunk.css.map": "/aatmnirbhar/static/css/main.ac017d37.chunk.css.map",
-    "static/js/2.9da2f52e.chunk.js.LICENSE.txt": "/aatmnirbhar/static/js/2.9da2f52e.chunk.js.LICENSE.txt"
+    "static/css/main.4da0eec7.chunk.css.map": "/aatmnirbhar/static/css/main.4da0eec7.chunk.css.map",
+    "static/js/2.63fbb511.chunk.js.LICENSE.txt": "/aatmnirbhar/static/js/2.63fbb511.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1279e63e.js",
-    "static/js/2.9da2f52e.chunk.js",
-    "static/css/main.ac017d37.chunk.css",
-    "static/js/main.c70969cd.chunk.js"
+    "static/js/2.63fbb511.chunk.js",
+    "static/css/main.4da0eec7.chunk.css",
+    "static/js/main.86cb077d.chunk.js"
   ]
 }
