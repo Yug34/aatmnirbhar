@@ -40,7 +40,9 @@ const inspirationsRendered = inspirationSites.map((inspiration) => (
     />
     <b>
       {inspiration.professorName}:{" "}
-      <a href={inspiration.siteLink}>{inspiration.siteLink}</a>
+      <a href={inspiration.siteLink}>
+        {inspiration.siteLink.length > 40 ? "Site" : inspiration.siteLink}
+      </a>
     </b>
   </li>
 ));
